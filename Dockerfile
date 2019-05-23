@@ -15,7 +15,7 @@ COPY . /app
 
 RUN go build -o slink-core -ldflags '-s -w' ./core
 
-FROM alpine:latest AS base_app
+FROM alpine:3.9 AS base_app
 
 COPY --from=server_builder /app/slink-core /bin/slink-core
 
