@@ -3,7 +3,6 @@ pipeline:
     image: plugins/docker
     repo: username502/sharelink-core
     secrets: [docker_username, docker_password]
-    auto_tag: true
     build_args:
       - DRONE=${DRONE}
       - DRONE_TAG=${DRONE_TAG}
