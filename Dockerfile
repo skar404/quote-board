@@ -15,7 +15,7 @@ COPY . /app
 
 RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go install -a -tags netgo -ldflags '-w -extldflags "-static"' ./core
 
-FROM alpine:latest AS weaviate
+FROM alpine:latest AS base_app
 
 COPY --from=server_builder /go/bin/core /bin/core
 
