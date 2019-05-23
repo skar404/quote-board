@@ -1,0 +1,10 @@
+pipeline:
+  build:
+    image: plugins/docker
+    repo: username502/sharelink-core
+    secrets: [docker_username, docker_password]
+    build_args:
+      - DRONE=${DRONE}
+      - DRONE_TAG=${DRONE_TAG}
+      - DRONE_COMMIT=${DRONE_COMMIT}
+      - DRONE_BRANCH=${DRONE_BRANCH}

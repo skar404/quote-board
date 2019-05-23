@@ -13,12 +13,12 @@ FROM build_base AS server_builder
 
 COPY . /app
 
-RUN CGO_ENABLED=1 GOOS=linux GOARCH=amd64 go install -a -tags netgo -ldflags '-w -extldflags "-static"' ./core
+RUN go build -o slink-core -ldflags '-s -w' ./core
 
 FROM alpine:latest AS base_app
 
-COPY --from=server_builder /go/bin/core /bin/core
+COPY --from=server_builder /app/slink-core /bin/slink-core
 
 EXPOSE 8080
 
-ENTRYPOINT ["/bin/core"]
+ENTRYPOINT ["/bin/slink-core"]
