@@ -1,15 +1,14 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/labstack/echo"
+
+	"sharelink/core/api"
 )
 
 func main() {
+
 	e := echo.New()
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "ping")
-	})
+	e.GET("/", api.Ping)
 	e.Logger.Fatal(e.Start(":8080"))
 }
