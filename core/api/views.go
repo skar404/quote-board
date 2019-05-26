@@ -6,17 +6,17 @@ import (
 	"sharelink/core/models"
 )
 
-type PingView struct {
+type pingView struct {
 	Status string `json:"status"`
 	Text   string `json:"text,omitempty"`
 }
 
-// Ping server
+// Ping ping server
 func Ping(c echo.Context) error {
 	err := models.PingDB()
 	if err != nil {
-		return c.JSON(http.StatusOK, PingView{Status: "ERROR", Text: "not connect to db"})
+		return c.JSON(http.StatusOK, pingView{Status: "ERROR", Text: "not connect to db"})
 	}
 
-	return c.JSON(http.StatusOK, PingView{Status: "SUCCESS"})
+	return c.JSON(http.StatusOK, pingView{Status: "SUCCESS"})
 }

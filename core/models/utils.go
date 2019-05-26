@@ -2,7 +2,7 @@ package models
 
 import "log"
 
-// ping data base
+// PingDB ping data base and logs error
 func PingDB() error {
 	err := db.Ping()
 	if err != nil {
