@@ -1,7 +1,7 @@
 package models
 
 import (
-	_ "github.com/lib/pq"
+	_ "github.com/lib/pq" // Init is Go Postgres driver for the database/sql package.
 
 	"database/sql"
 	"log"
