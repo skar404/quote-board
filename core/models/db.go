@@ -14,12 +14,12 @@ func InitDB(dataSourceName string) {
 	var err error
 	db, err = sql.Open("postgres", dataSourceName)
 	if err != nil {
-		log.Printf("error level 1")
+		log.Printf("error open conenct to db")
 		log.Panic(err)
 	}
 
 	if err = db.Ping(); err != nil {
-		log.Printf("error level 1")
+		log.Printf("error ping db")
 
 		log.Panic(err)
 	}

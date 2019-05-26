@@ -1,3 +1,5 @@
+# github.com/jessevdk/go-flags v1.4.0
+github.com/jessevdk/go-flags
 # github.com/labstack/echo v3.3.10+incompatible
 github.com/labstack/echo
 # github.com/labstack/gommon v0.2.8

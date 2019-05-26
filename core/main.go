@@ -1,20 +1,23 @@
 package main
 
 import (
-	"github.com/labstack/echo"
 	"sharelink/core/api"
 	"sharelink/core/models"
 	"sharelink/core/settings"
+
+	"github.com/labstack/echo"
 )
 
 func main() {
-	setting := settings.ServerSetting{
-		Postgres: "postgres://postgres:postgres@localhost:5400/postgres?sslmode=disable",
-	}
+	setting := settings.ServerSetting{}
+	setting.ParseEnv()
 
 	models.InitDB(setting.Postgres)
 
 	e := echo.New()
-	e.GET("/", api.Ping)
+	e.Debug = setting.Debug
+
+	api.Router(e)
+
 	e.Logger.Fatal(e.Start(":8080"))
 }
