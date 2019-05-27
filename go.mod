@@ -1,4 +1,4 @@
-module sharelink
+module quote-board
 
 go 1.12
 

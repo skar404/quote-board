@@ -1,9 +1,9 @@
 package main
 
 import (
-	"sharelink/core/api"
-	"sharelink/core/models"
-	"sharelink/core/settings"
+	"quote-board/core/api"
+	"quote-board/core/models"
+	"quote-board/core/settings"
 
 	"github.com/labstack/echo"
 )

@@ -1,9 +1,11 @@
 package api
 
 import (
-	"github.com/labstack/echo"
 	"net/http"
-	"sharelink/core/models"
+
+	"quote-board/core/models"
+
+	"github.com/labstack/echo"
 )
 
 type pingView struct {

@@ -1,7 +1,7 @@
 pipeline:
   build:
     image: plugins/docker
-    repo: username502/sharelink-core
+    repo: username502/quote-board
     secrets: [docker_username, docker_password]
     build_args:
       - DRONE=${DRONE}
