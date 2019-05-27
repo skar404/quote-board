@@ -11,6 +11,7 @@ type ServerSetting struct {
 	Debug    bool   `long:"debug" env:"DEBUG"`
 }
 
+// ParseEnv parse env and set default value
 func (s *ServerSetting) ParseEnv() {
 	var parser = flags.NewParser(s, flags.Default)
 	_, err := parser.Parse()
