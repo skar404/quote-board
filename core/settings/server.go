@@ -7,7 +7,7 @@ import (
 
 // ServerSetting base app settings or env
 type ServerSetting struct {
-	Postgres string `long:"postgres" default:"postgres://postgres:postgres@localhost:5400/postgres?sslmode=disable"`
+	Postgres string `long:"postgres" env:"POSTGRES" default:"postgres://postgres:postgres@localhost:5400/postgres?sslmode=disable"`
 	Debug    bool   `long:"debug" env:"DEBUG"`
 }
 

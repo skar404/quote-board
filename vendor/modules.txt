@@ -1,10 +1,22 @@
+# github.com/graphql-go/graphql v0.7.8
+github.com/graphql-go/graphql
+github.com/graphql-go/graphql/gqlerrors
+github.com/graphql-go/graphql/language/ast
+github.com/graphql-go/graphql/language/kinds
+github.com/graphql-go/graphql/language/parser
+github.com/graphql-go/graphql/language/printer
+github.com/graphql-go/graphql/language/source
+github.com/graphql-go/graphql/language/visitor
+github.com/graphql-go/graphql/language/location
+github.com/graphql-go/graphql/language/lexer
+github.com/graphql-go/graphql/language/typeInfo
 # github.com/jessevdk/go-flags v1.4.0
 github.com/jessevdk/go-flags
 # github.com/labstack/echo v3.3.10+incompatible
 github.com/labstack/echo
 # github.com/labstack/gommon v0.2.8
-github.com/labstack/gommon/color
 github.com/labstack/gommon/log
+github.com/labstack/gommon/color
 # github.com/lib/pq v1.1.1
 github.com/lib/pq
 github.com/lib/pq/oid

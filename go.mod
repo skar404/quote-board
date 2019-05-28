@@ -3,6 +3,7 @@ module quote-board
 go 1.12
 
 require (
+	github.com/graphql-go/graphql v0.7.8
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.2.8
