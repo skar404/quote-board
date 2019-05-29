@@ -5,6 +5,9 @@
 [![Build Status](https://cloud.drone.io/api/badges/skar404/quote-board/status.svg)](https://cloud.drone.io/skar404/sharelink)
 [![Coverage Status](https://coveralls.io/repos/github/skar404/quote-board/badge.svg?branch=master)](https://coveralls.io/github/skar404/quote-board?branch=master)
 [![codecov](https://codecov.io/gh/skar404/quote-board/branch/master/graph/badge.svg)](https://codecov.io/gh/skar404/quote-board)
+[![](https://images.microbadger.com/badges/commit/username502/quote-board.svg)](https://microbadger.com/images/username502/quote-board "Get your own commit badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/username502/quote-board.svg)](https://microbadger.com/images/username502/quote-board "Get your own image badge on microbadger.com")
+
 
 У каждого человека була такая ситуация когда он хотел скказать цитату, но забыл её и именно по этому я решил создать 
 универслаьное хранилице цитата и не чего больше чтобы не отвлекать вас этого чудесного процесса.
