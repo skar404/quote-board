@@ -1,23 +1,17 @@
 package settings
 
-import (
-	"log"
-	"testing"
-
-	"github.com/jessevdk/go-flags"
-	"github.com/stretchr/testify/assert"
-)
+import "testing"
 
 func TestServerSetting_ParseEnv(t *testing.T) {
-	opts := ServerSetting{}
-
-	var parser = flags.NewParser(&opts, flags.Default)
-	_, err := parser.ParseArgs([]string{})
-
-	if err != nil {
-		log.Panic("not parse env", err)
+	tests := []struct {
+		name string
+		s    *ServerSetting
+	}{
+		// TODO: Add test cases.
 	}
-
-	assert.Equal(t, opts.Postgres, "postgres://postgres:postgres@localhost:5400/postgres?sslmode=disable")
-	assert.False(t, opts.Debug)
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			tt.s.ParseEnv()
+		})
+	}
 }

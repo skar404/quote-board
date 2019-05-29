@@ -1,18 +1,24 @@
-package main
+package api
 
 import (
 	"testing"
+
+	"github.com/labstack/echo"
 )
 
-func Test_main(t *testing.T) {
+func TestRouter(t *testing.T) {
+	type args struct {
+		e *echo.Echo
+	}
 	tests := []struct {
 		name string
+		args args
 	}{
 		// TODO: Add test cases.
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			main()
+			Router(tt.args.e)
 		})
 	}
 }
