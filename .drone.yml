@@ -1,4 +1,10 @@
 pipeline:
+
+  test:
+    image: golang:1.5.3
+    commands:
+      - go test all
+
   build:
     image: plugins/docker
     repo: username502/quote-board
