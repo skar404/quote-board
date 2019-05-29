@@ -6,7 +6,7 @@ pipeline:
       - go get golang.org/x/tools/cmd/cover
       - go get github.com/mattn/goveralls
       - bash cli/get_coverpro_file.sh
-    secrets: [CODECOV_TOKEN]
+    secrets: [CODECOV_TOKEN, COVERALLS_TOKEN]
 
   build:
     image: plugins/docker
