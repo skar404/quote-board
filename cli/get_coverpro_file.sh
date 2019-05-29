@@ -1,14 +1,8 @@
 #!/usr/bin/env bash
 
 set -e
-echo "" > coverage.txt
 
-for d in $(go list ./... | grep -v vendor); do
-    go test -race -coverprofile=profile.out -covermode=atomic "$d"
-    if [ -f profile.out ]; then
-        cat profile.out >> coverage.txt
-        rm profile.out
-    fi
-done
+go test ./... -v -covermode=count -coverprofile=coverage.out
 
 bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+goveralls -coverprofile=coverage.out -service=travis-ci -repotoken $COVERALLS_TOKEN

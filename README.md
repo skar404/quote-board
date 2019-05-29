@@ -3,6 +3,8 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ba453dd1e5134cb894805a31a7fb255e)](https://www.codacy.com/app/skar404/sharelink?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=skar404/sharelink&amp;utm_campaign=Badge_Grade)
 [![Go Report Card](https://goreportcard.com/badge/github.com/skar404/quote-board)](https://goreportcard.com/report/github.com/skar404/sharelink)
 [![Build Status](https://cloud.drone.io/api/badges/skar404/quote-board/status.svg)](https://cloud.drone.io/skar404/sharelink)
+[![Coverage Status](https://coveralls.io/repos/github/skar404/quote-board/badge.svg?branch=master)](https://coveralls.io/github/skar404/quote-board?branch=master)
+[![codecov](https://codecov.io/gh/skar404/quote-board/branch/master/graph/badge.svg)](https://codecov.io/gh/skar404/quote-board)
 
 У каждого человека була такая ситуация когда он хотел скказать цитату, но забыл её и именно по этому я решил создать 
 универслаьное хранилице цитата и не чего больше чтобы не отвлекать вас этого чудесного процесса.
