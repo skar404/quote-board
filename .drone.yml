@@ -3,6 +3,8 @@ pipeline:
   test:
     image: golang:1.12
     commands:
+      - go get golang.org/x/tools/cmd/cover
+      - go get github.com/mattn/goveralls
       - bash cli/get_coverpro_file.sh
     secrets: [CODECOV_TOKEN]
 
