@@ -1,15 +1,5 @@
-# github.com/graphql-go/graphql v0.7.8
-github.com/graphql-go/graphql
-github.com/graphql-go/graphql/gqlerrors
-github.com/graphql-go/graphql/language/ast
-github.com/graphql-go/graphql/language/kinds
-github.com/graphql-go/graphql/language/parser
-github.com/graphql-go/graphql/language/printer
-github.com/graphql-go/graphql/language/source
-github.com/graphql-go/graphql/language/visitor
-github.com/graphql-go/graphql/language/location
-github.com/graphql-go/graphql/language/lexer
-github.com/graphql-go/graphql/language/typeInfo
+# github.com/davecgh/go-spew v1.1.0
+github.com/davecgh/go-spew/spew
 # github.com/jessevdk/go-flags v1.4.0
 github.com/jessevdk/go-flags
 # github.com/labstack/echo v3.3.10+incompatible
@@ -25,6 +15,10 @@ github.com/lib/pq/scram
 github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.8
 github.com/mattn/go-isatty
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/stretchr/testify v1.3.0
+github.com/stretchr/testify/assert
 # github.com/valyala/bytebufferpool v1.0.0
 github.com/valyala/bytebufferpool
 # github.com/valyala/fasttemplate v1.0.1

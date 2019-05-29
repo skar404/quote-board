@@ -3,7 +3,9 @@ pipeline:
   test:
     image: golang:1.12
     commands:
-      - go test ./core/...
+      - sh ./cli/get_coverpro_file.sh
+      - bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}
+    secrets: [CODECOV_TOKEN]
 
   build:
     image: plugins/docker
