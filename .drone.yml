@@ -3,7 +3,7 @@ pipeline:
   test:
     image: golang:1.12
     commands:
-      - sh cli/get_coverpro_file.sh
+      - bash cli/get_coverpro_file.sh
       - bash <(curl -s https://codecov.io/bash) -t ${CODECOV_TOKEN}
     secrets: [CODECOV_TOKEN]
 
